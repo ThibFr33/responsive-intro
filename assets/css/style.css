@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #667EEA;
+  padding: 1.5rem;
+  width: 100%;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.nav-container .logo{
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+.navbar {
+  display: flex;
+  gap: 1em;
+  list-style-type: none;
+}
+.navbar li a {
+  text-decoration: none;
+  color: ghostwhite;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+}
+.navbar li a:hover {
+  background-color: #4F5BD5;
+  border-radius: 1em;
+}
+.section-box {
+  width: 80%;
+  margin: 2em auto;
+  padding: 2em 0 ;
+  text-align: center;
+}
+.section-box h2 {
+  text-align: left;
+  max-width: 100%;
+  margin: 0 auto 1em auto;
+  padding: 0 1em;
+  font-size: 1.7em;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em;
+  width:100%
+}
+.card {
+  background-color: ghostwhite;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 2em;
+  text-align: center;
+  flex: 1 1 22%;
+  min-width: 200px;
+}
+.image-container {
+  width: 80vw;
+  max-width: 600px;
+  margin: 1em auto;
+
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1em;
+  margin: 0 auto;
+  display: block;
+}
+.colonnes {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2vw;
+  gap: 2em;
+}
+.colonne {
+  background-color: ghostwhite;
+  box-shadow: 10px 5px 5px lightgrey;
+  flex: 1 1 200px;
+  padding: 2em 2em;
+  margin: 1em;
+  border-radius: 1em;
+  text-align: center;
+}
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 1.5em 0 1em 0;
+  margin-top: 2em;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 0.9em;
+  padding: 0 2vw;
+}
+.hamburger {
+  color: ghostwhite;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav-container{
+    flex-direction: column;
+  }
+  .nav-container .navbar {
+    flex-direction: column;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 20px;
+  }
+  .d-none {
+    display: none;
+  }
+}
